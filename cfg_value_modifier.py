@@ -6,6 +6,14 @@ import os
 
 class CFGValueModifierApp:
     LANG_FILE = "language_config.json"
+    # New path for external config file to persist language preference
+    import pathlib
+    CONFIG_PATH = pathlib.Path.home() / ".cfg_value_modifier_config.json"
+
+    # Embedded default language config
+    EMBEDDED_LANG_CONFIG = {
+        "language": "en"
+    }
 
     def __init__(self, root):
         self.root = root
@@ -166,19 +174,21 @@ class CFGValueModifierApp:
         self.update_texts()
 
     def load_language(self):
-        if os.path.exists(self.LANG_FILE):
+        # Check external config file first
+        if self.CONFIG_PATH.exists():
             try:
-                with open(self.LANG_FILE, "r", encoding="utf-8") as f:
+                with open(self.CONFIG_PATH, "r", encoding="utf-8") as f:
                     data = json.load(f)
                     if data.get("language") in self.languages:
                         return data["language"]
             except Exception:
                 pass
-        return "en"  # Default language
+        # Fallback to embedded default
+        return self.EMBEDDED_LANG_CONFIG.get("language", "en")
 
     def save_language(self):
         try:
-            with open(self.LANG_FILE, "w", encoding="utf-8") as f:
+            with open(self.CONFIG_PATH, "w", encoding="utf-8") as f:
                 json.dump({"language": self.current_lang}, f)
         except Exception:
             pass
