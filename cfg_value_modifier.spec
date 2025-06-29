@@ -5,7 +5,7 @@ a = Analysis(
     ['cfg_value_modifier.py'],
     pathex=[],
     binaries=[],
-    datas=[],
+    datas=[('language_config.json', '.')],  # Include language config file
     hiddenimports=[],
     hookspath=[],
     hooksconfig={},
@@ -25,8 +25,8 @@ exe = EXE(
     name='cfg_value_modifier',
     debug=False,
     bootloader_ignore_signals=False,
-    strip=False,
-    upx=True,
+    strip=True,  # Strip debug symbols to reduce size
+    upx=False,
     upx_exclude=[],
     runtime_tmpdir=None,
     console=False,
@@ -35,4 +35,6 @@ exe = EXE(
     target_arch=None,
     codesign_identity=None,
     entitlements_file=None,
+    icon='icon.ico',
+    version='version.txt'  # Add version info file for metadata
 )

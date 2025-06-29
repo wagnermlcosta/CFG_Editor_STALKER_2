@@ -7,9 +7,17 @@ import os
 class CFGValueModifierApp:
     LANG_FILE = "language_config.json"
     # New path for external config file to persist language preference
+    import sys
     import pathlib
-    CONFIG_PATH = pathlib.Path.home() / ".cfg_value_modifier_config.json"
 
+    if getattr(sys, 'frozen', False):
+        # Executável PyInstaller
+        exe_dir = pathlib.Path(sys.executable).parent
+    else:
+        # Execução normal do script
+        exe_dir = pathlib.Path(__file__).parent
+
+    CONFIG_PATH = exe_dir / ".cfg_value_modifier_config.json"
     # Embedded default language config
     EMBEDDED_LANG_CONFIG = {
         "language": "en"
