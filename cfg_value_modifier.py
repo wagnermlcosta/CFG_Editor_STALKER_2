@@ -1,5 +1,4 @@
 import re
-import time  # Adicionado para suporte a delays controlados
 import tkinter as tk
 from tkinter import filedialog, messagebox, ttk
 import json
