@@ -5,7 +5,7 @@ a = Analysis(
     ['cfg_value_modifier.py'],
     pathex=[],
     binaries=[],
-    datas=[('language_config.json', '.')],  # Include language config file
+    datas=[],
     hiddenimports=[],
     hookspath=[],
     hooksconfig={},
@@ -19,27 +19,21 @@ pyz = PYZ(a.pure)
 exe = EXE(
     pyz,
     a.scripts,
+    a.binaries,
+    a.datas,
     [],
-    exclude_binaries=True,
     name='cfg_value_modifier',
     debug=False,
     bootloader_ignore_signals=False,
-    strip=True,
-    upx=False,
+    strip=False,
+    upx=True,
+    upx_exclude=[],
+    runtime_tmpdir=None,
     console=False,
     disable_windowed_traceback=False,
     argv_emulation=False,
     target_arch=None,
     codesign_identity=None,
     entitlements_file=None,
-    version='version.txt'
-)
-coll = COLLECT(
-    exe,
-    a.binaries,
-    a.datas,
-    strip=True,
-    upx=False,
-    upx_exclude=[],
-    name='cfg_value_modifier'
+    icon=['app_icon.ico'],
 )
