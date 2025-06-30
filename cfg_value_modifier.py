@@ -18,10 +18,6 @@ class CFGValueModifierApp:
         exe_dir = pathlib.Path(__file__).parent
 
     CONFIG_PATH = exe_dir / ".cfg_value_modifier_config.json"
-    # Embedded default language config
-    EMBEDDED_LANG_CONFIG = {
-        "language": "en"
-    }
 
     def __init__(self, root):
         self.root = root
