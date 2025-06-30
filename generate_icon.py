@@ -12,7 +12,9 @@ def create_basic_icon(filename='app_icon.png', size=256, bg_color='#2e2e2e', fg_
         font = ImageFont.load_default()
 
     # Calculate text size and position
-    text_width, text_height = font.getsize(text)
+    bbox = draw.textbbox((0, 0), text, font=font)
+    text_width = bbox[2] - bbox[0]
+    text_height = bbox[3] - bbox[1]
     position = ((size - text_width) / 2, (size - text_height) / 2)
 
     # Draw the text
