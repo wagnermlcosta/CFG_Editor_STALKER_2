@@ -6,6 +6,9 @@ import os
 
 class CFGValueModifierApp:
     LANG_FILE = "language_config.json"
+    EMBEDDED_LANG_CONFIG = {
+        "language": "en"
+    }
     # New path for external config file to persist language preference
     import sys
     import pathlib
