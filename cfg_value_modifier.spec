@@ -19,21 +19,27 @@ pyz = PYZ(a.pure)
 exe = EXE(
     pyz,
     a.scripts,
-    a.binaries,
-    a.datas,
     [],
+    exclude_binaries=True,
     name='cfg_value_modifier',
     debug=False,
     bootloader_ignore_signals=False,
-    strip=True,  # Strip debug symbols to reduce size
+    strip=True,
     upx=False,
-    upx_exclude=[],
-    runtime_tmpdir=None,
-    console=False,
+    console=True,
     disable_windowed_traceback=False,
     argv_emulation=False,
     target_arch=None,
     codesign_identity=None,
     entitlements_file=None,
-    version='version.txt'  # Add version info file for metadata
+    version='version.txt'
+)
+coll = COLLECT(
+    exe,
+    a.binaries,
+    a.datas,
+    strip=True,
+    upx=False,
+    upx_exclude=[],
+    name='cfg_value_modifier'
 )
