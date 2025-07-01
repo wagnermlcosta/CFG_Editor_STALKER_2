@@ -18,7 +18,7 @@ VSVersionInfo(
       [
       StringTable(
         u'040904B0',
-        [StringStruct(u'CompanyName', u'Seu Nome/Empresa'),
+        [StringStruct(u'CompanyName', u'wagnermlcosta'),
         StringStruct(u'FileDescription', u'CFG Editor for STALKER 2'),
         StringStruct(u'FileVersion', u'1.0.0.0'),
         StringStruct(u'InternalName', u'cfg_value_modifier'),
