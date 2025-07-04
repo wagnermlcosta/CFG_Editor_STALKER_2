@@ -24,10 +24,31 @@ python cfg_value_modifier.py
 6. Click "Modify Values"
 
 ## Building Executable
+
+To create the executable and required files:
+
+1. Install development dependencies:
 ```bash
-pip install pyinstaller
-pyinstaller --onefile --icon=app_icon.ico cfg_value_modifier.py
+pip install -r requirements-dev.txt
 ```
+
+2. Run the build script:
+```bash
+python build_executable.py
+```
+
+This will:
+- Generate the executable using PyInstaller
+
+## Releases
+
+Pre-built releases are available on the [GitHub Releases page](https://github.com/wagnermlcosta/CFG_Editor_STALKER_2/releases). Each release includes:
+- `CFG_Editor_STALKER_2.exe`: The main executable
+- `language_config.json`: Language configuration
+- `app_icon.ico`: Application icon
+- `LICENSE`: License information
+- `README.md`: Usage instructions
+- `examples/`: Example configuration files
 
 ## License
 MIT License - See [LICENSE](LICENSE)
