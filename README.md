@@ -28,7 +28,7 @@ python cfg_value_modifier.py
 
 To create the executable and required files:
 
-1. Install development dependencies(You need Python 3.13.5):
+1. Install development dependencies(You need Python first):
 ```bash
 pip install -r requirements-dev.txt
 ```
