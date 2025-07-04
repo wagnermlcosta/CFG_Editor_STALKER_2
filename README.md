@@ -40,15 +40,5 @@ python build_executable.py
 This will:
 - Generate the executable using PyInstaller
 
-## Releases
-
-Pre-built releases are available on the [GitHub Releases page](https://github.com/wagnermlcosta/CFG_Editor_STALKER_2/releases). Each release includes:
-- `CFG_Editor_STALKER_2.exe`: The main executable
-- `language_config.json`: Language configuration
-- `app_icon.ico`: Application icon
-- `LICENSE`: License information
-- `README.md`: Usage instructions
-- `examples/`: Example configuration files
-
 ## License
 MIT License - See [LICENSE](LICENSE)
