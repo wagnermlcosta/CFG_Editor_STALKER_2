@@ -10,6 +10,7 @@ Python GUI application for modifying values in .cfg configuration files.
 - Error handling for common issues
 
 ## Installation
+- Python 3.13.5
 ```bash
 git clone https://github.com/wagnermlcosta/CFG_Editor_STALKER_2.git
 python cfg_value_modifier.py
@@ -27,7 +28,7 @@ python cfg_value_modifier.py
 
 To create the executable and required files:
 
-1. Install development dependencies:
+1. Install development dependencies(You need Python 3.13.5):
 ```bash
 pip install -r requirements-dev.txt
 ```
