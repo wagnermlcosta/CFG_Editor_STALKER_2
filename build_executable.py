@@ -28,7 +28,7 @@ def build_executable(version):
     try:
         subprocess.run([
             "pyinstaller",
-            "--onedir",
+            "--onefile",
             "--windowed",
             "--icon=app_icon.ico",
             f"--name=CFG_Editor_STALKER_2_{version}",
