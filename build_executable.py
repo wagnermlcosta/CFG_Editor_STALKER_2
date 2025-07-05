@@ -41,6 +41,7 @@ def build_executable(version):
         subprocess.run([
             sys.executable,  # Use the current python interpreter
             "-m", "PyInstaller",
+            "--onefile",
             "--windowed",
             f"--icon={icon_path}",
             f"--name=CFG_Editor_STALKER_2_{version}",
