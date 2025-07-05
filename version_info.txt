@@ -22,7 +22,7 @@ VSVersionInfo(
         StringStruct(u'FileDescription', u'CFG Editor for STALKER 2'),
         StringStruct(u'FileVersion', u'1.0.0.0'),
         StringStruct(u'InternalName', u'cfg_value_modifier'),
-        StringStruct(u'LegalCopyright', u'Copyright (C) 2025'),
+        StringStruct(u'LegalCopyright', u'Copyright (C) wagnermlcosta 2025'),
         StringStruct(u'OriginalFilename', u'CFG_Editor_STALKER_2.exe'),
         StringStruct(u'ProductName', u'CFG Value Modifier'),
         StringStruct(u'ProductVersion', u'1.0.0.0')])
