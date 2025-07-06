@@ -11,6 +11,7 @@ env/
 dist/
 build/
 *.spec
+Output/
 
 # Configuration files
 .cfg_value_modifier_config.json

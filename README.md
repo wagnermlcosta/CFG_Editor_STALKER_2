@@ -1,48 +1,55 @@
 # CFG Editor for STALKER 2
 
-Python GUI application for modifying values in .cfg configuration files.
+Python GUI application for modifying values in `.cfg` configuration files for games like STALKER.
 
 ## Features
-- Intuitive dark theme interface
-- Mathematical operations on config values (+, -, *, /)
-- Line-range specific modifications
-- English/Portuguese language switching
-- Error handling for common issues
+- Intuitive dark theme interface.
+- Mathematical operations on config values (`+`, `-`, `*`, `/`).
+- Option to replace a value directly without any mathematical operation.
+- Line-range specific modifications to target specific sections of a file.
+- Language switching between English and Portuguese.
+- Standalone executable, no Python installation required to run.
 
 ## Installation
 
-1. Install Python 3.13.5:
-
-2. Run the commands:
-```bash
-git clone https://github.com/wagnermlcosta/CFG_Editor_STALKER_2.git
-python cfg_value_modifier.py
-```
+1.  Go to the [Releases page](https://github.com/wagnermlcosta/CFG_Editor_STALKER_2/releases).
+2.  Download the `.exe` file from the latest release.
+3.  Run the executable.
 
 ## Usage
-1. Select .cfg file
-2. Enter target key
-3. Choose operation (or select "Replace value without operation")
-4. Enter modification value
-5. (Optional) Specify line range
-6. Click "Modify Values"
 
-## Building Executable
+1.  Launch the application.
+2.  Click **"Select"** to choose a `.cfg` file.
+3.  Enter the configuration **"Key"** you want to modify (e.g., `fov`).
+4.  Choose the **"Operation"** (`+`, `-`, `*`, `/`) or check the **"Replace value without operation"** box.
+5.  Enter the **"Value"** for the operation.
+6.  (Optional) Specify a **"Start line"** and **"End line"** to limit the modification to a specific part of the file.
+7.  Click **"Modify Values"** to apply the changes to the file.
 
-To create the executable and required files:
+## Building from Source
 
-1. Install development dependencies(You need Python first):
-```bash
-pip install -r requirements-dev.txt
-```
+To create the executable from the source code:
 
-2. Run the build script:
-```bash
-python build_executable.py
-```
+1.  **Prerequisites:**
+    *   Install [Python 3.13](https://www.python.org/downloads/) or later.
 
-This will:
-- Generate the executable using PyInstaller
+2.  **Clone the repository:**
+    ```bash
+    git clone https://github.com/wagnermlcosta/CFG_Editor_STALKER_2.git
+    cd CFG_Editor_STALKER_2
+    ```
+
+3.  **Install dependencies:**
+    ```bash
+    pip install -r requirements-dev.txt
+    ```
+
+4.  **Run the build script:**
+    ```bash
+    python build_executable.py
+    ```
+
+This will generate the executable using PyInstaller. The final `.exe` file will be located in the `dist/` directory.
 
 ## License
 MIT License - See [LICENSE](LICENSE)
