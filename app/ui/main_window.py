@@ -95,10 +95,6 @@ class MainWindow:
         self.modify_button = ttk.Button(main_frame)
         self.modify_button.grid(row=6, column=0, columnspan=3, pady=20)
 
-        # Language toggle button
-        self.lang_button = ttk.Button(main_frame)
-        self.lang_button.grid(row=7, column=0, columnspan=3, pady=5)
-
         # Status bar
         self.status_bar = ttk.Label(self.root, text="", anchor='w', relief='sunken')
         self.status_bar.grid(row=1, column=0, sticky='ew')
@@ -116,7 +112,6 @@ class MainWindow:
         self.line_start_label.config(text=self.lang_manager.get_translation("line_start_label"))
         self.line_end_label.config(text=self.lang_manager.get_translation("line_end_label"))
         self.modify_button.config(text=self.lang_manager.get_translation("modify_button"))
-        self.lang_button.config(text=self.lang_manager.get_translation("language_button"))
 
     def show_status_message(self, message, duration=3000):
         self.status_bar.config(text=message)

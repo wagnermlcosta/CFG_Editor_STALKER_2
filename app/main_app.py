@@ -15,7 +15,6 @@ class CFGValueModifierApp:
     def setup_callbacks(self):
         self.ui.select_button.config(command=self.select_file)
         self.ui.modify_button.config(command=self.modify_values)
-        self.ui.lang_button.config(command=self.toggle_language)
 
     def select_file(self):
         file = filedialog.askopenfilename(filetypes=FILE_TYPES)
@@ -86,5 +85,4 @@ class CFGValueModifierApp:
             messagebox.showerror(self.lang_manager.get_translation("title"), self.lang_manager.get_translation("error_save_file").format(e))
 
     def toggle_language(self):
-        self.lang_manager.toggle_language()
-        self.ui.update_texts()
+        pass

@@ -18,29 +18,6 @@
         "error_read_file": "Error reading file: {}",
         "error_save_file": "Error saving file: {}",
         "success_modify": "Values modified successfully.",
-        "error_div_zero": "Division by zero is not allowed.",
-        "language_button": "Português"
-    },
-    "pt": {
-        "title": "Modificador de Valores CFG",
-        "file_label": "Arquivo .cfg:",
-        "select_button": "Selecionar",
-        "key_label": "Chave:",
-        "operation_label": "Operação:",
-        "replace_only": "Substituir valor sem operação",
-        "value_label": "Valor:",
-        "line_start_label": "Linha inicial (opcional):",
-        "line_end_label": "Linha final (opcional):",
-        "modify_button": "Modificar Valores",
-        "error_no_file": "Por favor, selecione um arquivo .cfg.",
-        "error_no_key": "Por favor, informe a chave.",
-        "error_no_value": "Por favor, informe o valor.",
-        "error_invalid_value": "Valor inválido. Informe um número válido.",
-        "error_invalid_line": "Linha inicial ou final inválida. Informe números inteiros válidos.",
-        "error_read_file": "Erro ao ler o arquivo: {}",
-        "error_save_file": "Erro ao salvar o arquivo: {}",
-        "success_modify": "Valores modificados com sucesso.",
-        "error_div_zero": "Divisão por zero não é permitida.",
-        "language_button": "English"
+        "error_div_zero": "Division by zero is not allowed."
     }
 }
