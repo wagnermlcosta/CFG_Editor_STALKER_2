@@ -6,8 +6,10 @@ from app.constants import EMBEDDED_LANG_CONFIG, LANG_FILE
 
 def get_base_dir():
     if getattr(sys, 'frozen', False):
-        return Path(sys.executable).parent
+        # When running as a PyInstaller executable, files are extracted to sys._MEIPASS
+        return Path(sys._MEIPASS)
     else:
+        # When running from source, the language file is in the project root
         return Path(__file__).parent.parent.parent
 
 class LanguageManager:
