@@ -7,7 +7,6 @@ Python GUI application for modifying values in `.cfg` configuration files for ga
 - Mathematical operations on config values (`+`, `-`, `*`, `/`).
 - Option to replace a value directly without any mathematical operation.
 - Line-range specific modifications to target specific sections of a file.
-- Language switching between English and Portuguese.
 - Standalone executable, no Python installation required to run.
 
 ## Installation
