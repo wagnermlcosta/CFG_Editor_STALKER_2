@@ -87,7 +87,7 @@ def build_executable(version):
             "--specpath", str(build_path),
             f"--version-file={version_file_path}",
             "--add-data", f"{project_root / 'language_config.json'}{os.pathsep}.",
-            "cfg_value_modifier.py"
+            "main.py"
         ], check=True)
         print("--> Executable built successfully!")
         
