@@ -43,9 +43,9 @@ To create the executable from the source code:
     pip install -r requirements-dev.txt
     ```
 
-4.  **Run the build script:**
+4.  **Run the build command:**
     ```bash
-    python build_executable.py
+    pyinstaller main.spec
     ```
 
 This will generate the executable using PyInstaller. The final `.exe` file will be located in the `dist/` directory.
