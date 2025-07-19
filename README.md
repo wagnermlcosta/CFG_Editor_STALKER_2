@@ -55,13 +55,7 @@ No installation required. This is a portable application.
     cd CFG_Editor_STALKER_2
     ```
 
-2.  **Install dependencies:**
-    ```sh
-    pip install -r requirements.txt
-    ```
-    *Note: `requirements.txt` only contains `pyinstaller` for building the executable. The application itself has no external dependencies.*
-
-3.  **Run the application:**
+2.  **Run the application:**
     *   **Windows:** `python main.py`
     *   **Linux/macOS:** `python3 main.py`
 
