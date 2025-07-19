@@ -1,2 +1,0 @@
-# Development dependencies - only needed for building .exe
-pyinstaller==6.14.1
